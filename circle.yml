@@ -37,7 +37,7 @@ jobs:
       - run: yarn test
 deploy:
     docker:
-      - image: buildpack-deps:trusty
+      - image: circleci/node:7.10
     steps:
       - checkout
       - run:
